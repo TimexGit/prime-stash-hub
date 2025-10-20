@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
+import logo from "@/assets/logo.png";
 
 interface NavigationProps {
   onSecretClick?: () => void;
@@ -25,8 +26,8 @@ export const Navigation = ({ onSecretClick }: NavigationProps) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-primary rounded-lg flex items-center justify-center shadow-glow transition-transform duration-300 group-hover:scale-110">
-              <span className="text-lg sm:text-xl font-bold text-primary-foreground">T</span>
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg overflow-hidden shadow-glow transition-transform duration-300 group-hover:scale-110">
+              <img src={logo} alt="TehTehAir Store Logo" className="w-full h-full object-cover" />
             </div>
             <span className="text-lg sm:text-xl font-bold gradient-text hidden sm:block">TehTehAir Store</span>
           </Link>

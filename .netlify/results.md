@@ -1,0 +1,1 @@
+Swapped out the placeholder site logo in the header for the user-supplied branding image. The new logo file was relocated into the project's source assets directory and integrated into the Navigation component. As a result, the site now displays the correct logo across all viewports and aligns with the intended branding.
